@@ -47,7 +47,9 @@ defmodule OpentelemetryRavix.MixProject do
       {:dialyxir, "~> 1.1", only: [:dev, :test], runtime: false},
       {:opentelemetry, "~> 1.0", only: [:dev, :test]},
       {:opentelemetry_exporter, "~> 1.0", only: [:dev, :test]},
-      {:ex_doc, "~> 0.29", only: [:dev], runtime: false}
+      {:ex_doc, "~> 0.29", only: [:dev], runtime: false},
+      {:excoveralls, "~> 0.14", only: :test},
+      {:credo, "~> 1.6", only: [:dev, :test], runtime: false},
     ]
   end
 
